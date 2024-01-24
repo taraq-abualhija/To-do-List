@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your TO DO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="field.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script defer src="style.js"></script>
+    <script defer src="field.js"></script>
+  </head>
+
+  <body>
+    <div id="papaform" class="papaform" style="display: none">
+      <form id="formscale" action="action_page.php">
+        <div class="container">
+          <div id="xmark" class="fa-solid fa-xmark"></div>
+          <h1 style="text-align: center">Create account</h1>
+          <hr />
+          <div class="baba">
+            <i class="fa-solid fa-circle-check"></i>
+            <label for="Username"><b>Username</b></label>
+
+            <input  
+              type="text"
+              placeholder="Enter Username"
+              name="username"
+              id="username"
+              class=""
+              required
+            />
+
+            <p id="note1">At least 3 char</p>
+          </div>
+          <div class="baba">
+            <i class="fa-solid fa-circle-check"></i>
+            <label for="email"><b>Email</b></label>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+            />
+            <p id="note2">Please enter a correct Email</p>
+          </div>
+          <div class="baba">
+            <i class="fa-solid fa-circle-check"></i>
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              id="psw"
+              required
+            />
+            <p id="note3">
+              Password must be at least 8 chars with 1 uppercase letter and 1
+              number
+            </p>
+          </div>
+          <div class="baba">
+            <i class="fa-solid fa-circle-check"></i>
+            <label for="pswrepeat"><b>Repeat Password</b></label>
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="psw-repeat"
+              id="pswrepeat"
+              required
+            />
+            <p id="note4">Please make sure your password match</p>
+          </div>
+          <button id="registerbtn" type="submit" class="registerbtn" disabled>
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
+    <header class="menu">
+      <h1>To Do List</h1>
+      <span href="#" id="createbtn" class="myButton">Create Account</span>
+    </header>
+    <aside class="addlist">
+      <form>
+        <h2>Add your to do</h2>
+
+        <div class="merge2">
+          <input type="text" placeholder="Text here!" />
+          <button class="fa-solid fa-plus add"></button>
+        </div>
+      </form>
+    </aside>
+    <main id="containerText">
+      <div class="item">
+        <i class="fa-solid fa-star myicon"></i>
+        <p class="parg">Task 1</p>
+        <div class="merge">
+          <i class="fa-solid fa-trash myicon mergeicon"></i>
+          <i class="fa-solid fa-face-angry myicon mergeicon"></i>
+        </div>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-star myicon"></i>
+        <p class="parg">Task 2</p>
+        <div class="merge">
+          <i class="fa-solid fa-trash myicon mergeicon"></i>
+          <i class="fa-solid fa-face-angry myicon mergeicon"></i>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

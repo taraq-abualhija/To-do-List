@@ -1,0 +1,143 @@
+* {box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add padding to containers */
+.papaform{
+  z-index: 50;
+  /* border: 1px solid red; */
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+ 
+  /* border: 4px solid red ; */
+}
+form container{
+  width: 40% !important;
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.papaform form {
+  background-color: white;
+  padding: 30px 16px;
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  /* border: 4px solid red ; */
+  border-radius: 7px;
+  transform: scale(0);
+  transition: all 1s;
+}
+.container h1{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.baba{
+  position: relative;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+}
+.baba p{
+  margin-top: 5px;
+  font-size: 14px;
+  color: red;
+  display: none;    
+}
+.fa-circle-check{
+position: absolute;
+display: block;
+font-size: 18px;
+right: 10px;
+top: 38px;
+color: #04AA6D;
+opacity: 0;
+}
+
+.error{
+  border: 2px solid red !important;
+}
+
+.pass{
+  border: 2px solid #04AA6D !important;
+}
+
+.fa-xmark{
+  float: right;
+
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 1s;
+}
+.fa-xmark:hover{
+  color: red;
+  transform: scale(1.1);
+  transform: rotate(180deg);
+
+}
+
+/* Full-width input fields */
+input[type=email], input[type=password], input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 0 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+input[type=email]:focus, input[type=password]:focus, input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  opacity: 0.9;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+}
+button:disabled{
+opacity: 0.4;
+cursor: not-allowed;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+

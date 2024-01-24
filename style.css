@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.myButton {
+  background-color: rgba(0, 0, 0, 0.884);
+  width: fit-content;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+  right: 0;
+	font-weight:bold;
+	padding:10px 20px;
+	text-decoration:none;
+  border-radius: 15px;
+}
+.myButton:hover {
+  background-color: rgba(0, 0, 0, 0.623)
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.884)
+}
+.menu{
+  border-bottom: 3px solid white;
+  z-index: 10;
+  position: fixed;
+  background-color: rgba(255, 166, 0, 0.646);
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu h1{
+  padding: 15px;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.884);
+}
+.addlist{
+  margin-right: 30px;
+  width: fit-content;
+  min-height: fit-content;
+  position: fixed;
+  top: 50%;
+  right: 0;
+ }
+ h2{
+  z-index: 200;
+  text-align: center;
+  font-size: 1.5em;
+  color: white; 
+  margin-bottom: 15px;
+}
+#containerText{
+  padding-top: 200px;
+  min-height: 50vh;
+}
+.item {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  color: white;
+  background-color: rgba(176, 173, 173, 0.929);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  border-bottom:3px solid white
+}
+.lineFinish{
+  text-decoration-line: line-through;
+}
+.item p{
+  font-size: 20px;
+}
+input{
+  padding: 10px 40px;
+  border: 3px solid white;
+  text-align: center;
+  border-radius: 10px;
+  color: #B0760B;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+button{
+  all: unset;
+}
+.mergeicon {
+  margin-right: 10px;
+
+}
+.fa-check{
+  font-size: 27px;
+  color: green;
+  cursor: pointer;
+}
+.fa-face-angry{
+  font-size: 27px;
+  color: rgb(208, 66, 66);
+  transition: 0.5s ease;
+  cursor: pointer;
+  }
+.fa-star:hover{
+color: orange;
+transition: 0.5s ease;
+cursor: pointer;
+
+}
+.fa-trash:hover{
+color: red;
+cursor: pointer;
+transition: all 2s;
+}
+.fa-plus{
+  font-size: 27px;
+  color: white;
+  position: relative;
+  top: 1px;
+  left: 15px;
+  
+}
+.fa-plus:hover{
+  cursor: pointer;
+  color: yellowgreen;
+  transition: 0.5s ease;
+}
+.merge2{
+display: flex;
+justify-content: center;
+/* margin-bottom: 50px; */
+} 
+.merge .change{
+display: none;
+}
+.orange{
+  color: orange;
+}
